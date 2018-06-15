@@ -1,0 +1,67 @@
+.editDetailsWrapper {
+  padding: 50px 0px 0px 50px;
+}
+.form-control {
+  width: 50% !important;
+}
+.formButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20%;
+}
+.postData {
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 3px auto;
+  padding: 15px 20px 40px 20px;
+  width: 67%;
+
+  clear: both;
+}
+.postData:hover {
+  background-color: lightgrey;
+  color: brown;
+}
+
+.postTitle {
+  float: left;
+}
+.postCategory {
+  float: right;
+}
+.AddPostData {
+  width: 84%;
+}
+.addPostButton {
+  margin: 40px 10px 10px 10px;
+}
+.addPostButton > a {
+  color: white;
+}
+.PostDetailsWrapper {
+  margin: 35px;
+}
+.PostDetailsWrapper > p {
+  clear: both;
+  padding: 20px 0px 5px 25px;
+}
+.backPostButton {
+  color: blue;
+  background: transparent;
+  cursor: pointer;
+  border: none !important;
+}
+.backPostButton:focus,
+.backPostButton:active {
+  box-shadow: none !important;
+  border: none !important;
+  transition: none !important;
+}
+/* .deletePostButton,
+backPostButton {
+  clear: both;
+} */
