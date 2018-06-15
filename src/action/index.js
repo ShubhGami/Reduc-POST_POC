@@ -1,5 +1,5 @@
 export function showPost(booksDetail, initial) {
-  console.log("flag value is :", initial);
+  console.log("flag value is :", booksDetail);
   return {
     type: "BOOK1",
     payload: { post: booksDetail, flag: initial }
