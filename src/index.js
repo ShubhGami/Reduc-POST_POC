@@ -13,7 +13,7 @@ import PostDetails from "./container/PostDetails";
 // import AddPost from "./container/AddPost";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-const abc = "sdfsdf";
+
 const store = createStore(reducers);
 
 ReactDOM.render(
@@ -21,9 +21,7 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Route path="/" component={App} />
-        <Route path="/editPost" component={EditPost} />
         <Route path="/postdetails" component={PostDetails} />
-        )} />
       </div>
     </BrowserRouter>
   </Provider>,

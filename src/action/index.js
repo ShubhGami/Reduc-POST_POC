@@ -17,3 +17,10 @@ export function showEditPost(flag) {
     payload: flag
   };
 }
+export function showDetails(flag) {
+  console.log("i called showDetails", flag);
+  return {
+    type: "VIEW_DETAILS",
+    payload: flag
+  };
+}

@@ -36,7 +36,8 @@ class EditDetails extends React.Component {
       categories: this.state.categories,
       content: this.state.content
     });
-    this.props.showEditPost(false);
+    // this.props.showEditPost(false);
+    this.props.showEditPost(true);
   }
   // saveDetails1() {
   //   savePost.push(this.state.titleValue);
@@ -119,7 +120,11 @@ class EditDetails extends React.Component {
               </button>
             </Link>
             <Link to="/">
-              <button className="btn btn-danger" type="button">
+              <button
+                className="btn btn-danger"
+                type="button"
+                onClick={() => this.props.showEditPost(true)}
+              >
                 Cancel
               </button>
             </Link>
