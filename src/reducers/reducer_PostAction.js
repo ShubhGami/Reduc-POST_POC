@@ -26,6 +26,10 @@ export default function(state = initialState, action) {
       // console.log("Reducer save action", action.payload);
       // console.log("Reducer State", state.post);
       return { post: state.post.concat(action.payload) };
+    case "DELETE_POST":
+      return {
+        post: state.post.filter(post => post.titleValue !== action.payload)
+      };
   }
   return state;
 }

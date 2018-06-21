@@ -13,7 +13,7 @@ class PostNavigation extends React.Component {
     console.log("booklist ----> ", this.props.addPost.post.length);
 
     // if (this.props.showEdit && this.props.viewDetails === false) {
-    if (this.props.showEdit && this.props.addPost.post.length > 0) {
+    if (this.props.showEdit && this.props.addPost.post.length >= 0) {
       return (
         <div>
           <AddPost />

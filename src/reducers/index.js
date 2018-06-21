@@ -1,6 +1,7 @@
 import React from "react";
 import { combineReducers } from "redux";
 import BookReducer from "./ServiceData_reducer";
+// import DeletePost from "./reducer_DeleteAction";
 import SelectedBook from "./action_reducer";
 import AddPost from "./reducer_PostAction";
 import ShowEdit from "./reducer_showEdit";
@@ -12,5 +13,6 @@ const bookReducer = combineReducers({
   addPost: AddPost,
   showEdit: ShowEdit,
   viewDetails: ViewDetails
+  // deletePost: DeletePost
 });
 export default bookReducer;

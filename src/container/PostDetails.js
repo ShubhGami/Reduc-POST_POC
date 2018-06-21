@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { showPost } from "../action/index";
+import { showPost, deletePost } from "../action/index";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { showEditPost } from "../action";
 import { bindActionCreators } from "redux";
 
 class PostDetails extends React.Component {
+  handleDelete(key) {
+    this.props.showEditPost(true);
+    this.props.deletePost(key);
+  }
   render() {
     console.log("out when nothing in booklist ", this.props.viewDetails);
     if (this.props.viewDetails) {
@@ -33,6 +37,9 @@ class PostDetails extends React.Component {
           </Link>
           <Link to="/">
             <button
+              onClick={() =>
+                this.handleDelete(this.props.bookList.post.titleValue)
+              }
               name="AddPost"
               style={{ float: "right" }}
               className="btn btn-success deletePostButton"
@@ -68,6 +75,9 @@ function mapStateToProps(state) {
   };
 }
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ showEditPost: showEditPost }, dispatch);
+  return bindActionCreators(
+    { showEditPost: showEditPost, deletePost: deletePost },
+    dispatch
+  );
 }
 export default connect(mapStateToProps, mapDispatchToProps)(PostDetails);

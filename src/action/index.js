@@ -24,3 +24,10 @@ export function showDetails(flag) {
     payload: flag
   };
 }
+export function deletePost(key) {
+  console.log("delate post call", key);
+  return {
+    type: "DELETE_POST",
+    payload: key
+  };
+}

@@ -39,6 +39,7 @@ class EditDetails extends React.Component {
     // this.props.showEditPost(false);
     this.props.showEditPost(true);
   }
+
   // saveDetails1() {
   //   savePost.push(this.state.titleValue);
   //   savePost.push(this.state.categories);
